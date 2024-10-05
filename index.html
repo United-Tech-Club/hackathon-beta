@@ -38,7 +38,7 @@
 <body class="bg-gray-900 text-white">
 
     <!-- Navbar -->
-    <nav class="bg-cinematic p-4 shadow-lg">
+    <nav class="bg-cinematic p-4 shadow-lg fixed w-full">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <div class="text-2xl font-bold">
@@ -49,11 +49,11 @@
 
             <!-- Desktop Menu -->
             <ul class="hidden md:flex space-x-8 font-semibold tracking-wide uppercase">
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Home</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Code of Conduct</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Gallery</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Our Sponsors</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Register Now</a></li>
+                <li class="nav-item"><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li class="nav-item"><a href="#coc" class="hover:text-gray-300">Code of Conduct</a></li>
+                <li class="nav-item"><a href="#gallery" class="hover:text-gray-300">Gallery</a></li>
+                <li class="nav-item"><a href="#sponsors" class="hover:text-gray-300">Our Sponsors</a></li>
+                <li class="nav-item"><a href="#register" class="hover:text-gray-300">Register Now</a></li>
             </ul>
 
             <!-- Hamburger Icon for Mobile Menu -->
@@ -71,17 +71,18 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-800">
             <ul class="space-y-4 font-semibold p-4 uppercase tracking-wide">
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Home</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Code of Conduct</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Gallery</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Our Sponsors</a></li>
-                <li class="nav-item"><a href="#" class="hover:text-gray-300">Register Now</a></li>
+                <li class="nav-item"><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li class="nav-item"><a href="coc" class="hover:text-gray-300">Code of Conduct</a></li>
+                <li class="nav-item"><a href="gallery" class="hover:text-gray-300">Gallery</a></li>
+                <li class="nav-item"><a href="sponsors" class="hover:text-gray-300">Our Sponsors</a></li>
+                <li class="nav-item"><a href="register" class="hover:text-gray-300">Register Now</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto py-20 text-center">
+    <!-- timer starts -->
+    <div class="container mx-auto py-20 text-center" id="home">
         <h1 class="text-5xl font-extrabold text-white">Welcome to U-TEC Hackathon Beta (β)</h1>
         <p class="mt-6 text-lg text-gray-300">Think, Code, Innovate.</p>
     </div>
@@ -92,6 +93,40 @@
             <div id="timer" class="timer p-4 rounded-lg bg-gray-800 shadow-lg"></div>
         </div>
     </div>
+    <!-- timer ends -->
+    <!-- about section -->
+    <div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
+        <div class="relative rounded-md">
+            <img src="" class="w-full h-full rounded-md  object-center object-fill absolute sm:block hidden" />
+            <img src="" class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
+            <div
+                class="text-xl relative z-20 bg-gradient-to-r from-blue-800 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md ">
+                <div>
+                    <h1 class="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64">What is
+                        U-TEC Hackathon Beta?</h1>
+                    <p class="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12  2xl:pr-12 mt-4">
+                        U-TEC Hackathon Beta is a national-level event that unites diverse talents to collaboratively
+                        create innovative technological solutions for real-world problems, fostering competition and
+                        empowering future tech leaders.</p>
+                </div>
+                <div class="md:mt-12 mt-20">
+                    <button
+                        class="text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">Learn
+                        More
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section ends -->
+
+    <!-- code of conduct starts -->
+    <div class="container mx-auto py-20 text-center" id="coc">
+        <h1 class="text-5xl font-extrabold text-white">Code of Conduct</h1>
+        <p class="mt-6 text-lg text-gray-300">The attendees of U-TEC Hackathon Beta must follow these code of conduct.
+        </p>
+        
+    </div>
+    <!-- code of conduct ends -->
     <script>
         // Mobile menu toggle
         const menuBtn = document.getElementById('menu-btn');
