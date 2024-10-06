@@ -9,6 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for a cool cinematic effect */
+        html{
+            scroll-behavior: smooth;
+        }
         .nav-item {
             transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
         }
@@ -174,7 +177,7 @@
                         U-TEC Hackathon Beta is a national-level event that unites diverse talents to collaboratively create innovative technological solutions for real-world problems, fostering competition and empowering future tech leaders.
                     </p>
                 </div>
-                <div class="md:mt-12 mt-20">
+                <div class="md:mt-12 mt-20" id="coc">
                     <button class="text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">
                         Learn More
                     </button>
@@ -192,7 +195,7 @@
 
     <!-- code of conduct starts -->
 
-    <div class="max-w-4xl mx-auto my-12 p-8 bg-gray-900 shadow-lg rounded-lg" id="coc">
+    <div class="max-w-4xl mx-auto my-12 p-8 bg-gray-900 shadow-lg rounded-lg">
         <h1 class="text-4xl font-extrabold text-white text-center mb-6 ">Code of Conduct</h1>
         <p class="text-gray-300 leading-relaxed mb-6">
             U-TEC Hackathon Beta (β) is dedicated to providing a safe, inclusive, and welcoming environment for all
@@ -251,7 +254,7 @@
             <li>Follow local health and safety regulations and any specific guidelines set by the event organizers.</li>
         </ul>
 
-        <footer class="mt-10 text-center text-gray-500 text-sm">
+        <footer class="mt-10 text-center text-gray-500 text-sm" id="gallery">
             <p>By participating in U-TEC Hackathon Beta (β), you agree to follow this Code of Conduct. Let’s work
                 together to create an environment where everyone can innovate, learn, and have fun!</p>
         </footer>
@@ -261,7 +264,7 @@
 
     <!-- gallery starts -->
 
-    <h1 class="text-4xl font-extrabold text-white text-center mb-4" id="gallery">Gallery
+    <h1 class="text-4xl font-extrabold text-white text-center mb-8">Gallery
     </h1>
     <div id="gallery" class="relative w-full lg:w-1/2 mx-auto h-full mb-10 p-3 lg:p-0" data-carousel="slide">
 
@@ -388,7 +391,7 @@
 
     <!-- sponsor starts -->
 
-    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4"   id="sponsors">
         <div class="w-full flex flex-col justify-center items-center">
             <div class="flex flex-col justify-center items-center text-center space-y-4">
                 <h1
