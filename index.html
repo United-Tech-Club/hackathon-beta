@@ -62,7 +62,11 @@
         color:yellow;
         transform: scale(1.1);
         }
-        
+        @media screen and (max-width: 1000px) {
+            .hide-on-small{
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -131,7 +135,7 @@
     </div>
     <!-- timer ends -->
     <!-- about section -->
-    <div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
+    <!-- <div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
         <div class="relative rounded-md">
             <img src="" class="w-full h-full rounded-md  object-center object-fill absolute sm:block hidden" />
             <img src="" class="w-full h-full rounded-md absolute object-center object-fill sm:hidden" />
@@ -154,7 +158,36 @@
                                
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
+        <div class="relative rounded-md flex items-center justify-between  border-2 border-dashed">
+            <!-- Text Section -->
+            <div class="text-xl relative z-20 bg-gradient-to-r from-blue-800 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md md:w-9/12">
+                <div>
+                    <h1 class="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64">
+                        What is U-TEC Hackathon Beta?
+                    </h1>
+                    <p class="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
+                        U-TEC Hackathon Beta is a national-level event that unites diverse talents to collaboratively create innovative technological solutions for real-world problems, fostering competition and empowering future tech leaders.
+                    </p>
+                </div>
+                <div class="md:mt-12 mt-20">
+                    <button class="text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Image Section (Smaller Image) -->
+            <div class="md:w-3/12 w-full hide-on-small">
+                <img src="assets/sword.svg" class="w-full h-auto rounded-md object-contain" alt="Hackathon Image">
+            </div>
+        </div>
     </div>
+    
     <!-- about section ends -->
 
     <!-- code of conduct starts -->
@@ -407,13 +440,13 @@
 
     <!-- sponsor ends -->
     <!-- footer -->
-    <footer class="bg-white dark:bg-gray-900 ">
+    <footer class="bg-white dark:bg-gray-900 bg-cinematic-footer">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0">
+                <div class="mb-6 md:mb-0  text-white">
                     <a href="https://www.unitedtechclub.com" class="flex items-center">
                         <img src="assets/club_logo.png" class="h-8 me-3" alt="FlowBite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">United
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white  text-white">United
                             Tech Club</span>
                     </a>
                 </div>
