@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a cool cinematic effect */
+        .nav-item {
+            transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .nav-item:hover {
+            color: #e7242d;
+            transform: scale(1.1);
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+
+        .mobile-menu.open {
+            max-height: 300px;
+            /* Adjust based on content */
+        }
+
+        /* Cinematic gradient background */
+        .bg-cinematic {
+            background: linear-gradient(90deg, #21409a, #e7242d);
+        }
+
+        /* Full height for SVG below navbar */
+        .full-height {
+            height: calc(100vh - 64px);
+            /* Adjust based on navbar height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Ensure SVG fills the available space */
+        .full-height img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Cover the area while maintaining aspect ratio */
+        }
+
+        .main-logo {
+            background: white;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <nav class="bg-cinematic p-4 shadow-lg fixed w-full z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-bold">
+                    <a href="https://hackathon.unitedtechclub.com/" class="text-white tracking-wide">
+                        <img src="assets/utc-fav-icon.svg" class="h-10 w-18 main-logo" alt="U-TEC Hackathon Beta">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 font-semibold tracking-wide uppercase">
+                    <li class="nav-item"><a href="https://hackathon.unitedtechclub.com/"
+                            class="hover:text-gray-300">Home</a></li>
+                    <li class="nav-item"><a href="https://hackathon.unitedtechclub.com/"
+                            class="hover:text-gray-300">Code of Conduct</a></li>
+                    <li class="nav-item"><a href="https://hackathon.unitedtechclub.com/"
+                            class="hover:text-gray-300">Gallery</a></li>
+                    <li class="nav-item"><a href="https://hackathon.unitedtechclub.com/" class="hover:text-gray-300">Our
+                            Sponsors</a></li>
+                    <li class="nav-item"><a href="https://hackathon.unitedtechclub.com/"
+                            class="hover:text-gray-300">Schedule</a></li>
+                </ul>
+
+                <!-- Hamburger Icon for Mobile Menu -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-800">
+                <ul class="space-y-4 font-semibold p-4 uppercase tracking-wide">
+                    <li class="nav-item"><a href="hackathon.unitedtechclub.com" class="hover:text-gray-300">Home</a>
+                    </li>
+                    <li class="nav-item"><a href="hackathon.unitedtechclub.com" class="hover:text-gray-300">Code of
+                            Conduct</a></li>
+                    <li class="nav-item"><a href="hackathon.unitedtechclub.com" class="hover:text-gray-300">Gallery</a>
+                    </li>
+                    <li class="nav-item"><a href="hackathon.unitedtechclub.com" class="hover:text-gray-300">Our
+                            Sponsors</a></li>
+                    <li class="nav-item"><a href="hackathon.unitedtechclub.com" class="hover:text-gray-300">Schedule</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="bg-white dark:bg-gray-900 antialiased">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
+                        Day 1 Schedule (Dec 4th)
+                    </h2>
+                </div>
+
+                <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+                    <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                11:00 AM - 12:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Registration
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                12:00 PM - 01:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Inauguration of the program
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                01:00 PM - 03:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon begins
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                03:00 PM - 03:45 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Snacks Break
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                03:45 PM - 08:15 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                08:15 PM - 09:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Dinner Break
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                09:00 PM onwards
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="max-w-3xl mx-auto text-center mt-10">
+                    <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
+                        Day 2 Schedule (Dec 5th)
+                    </h2>
+                </div>
+
+                <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+                    <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                07:00 AM - 07:45 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Breakfast
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                07:45 AM - 11:00 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                11:00 AM - 11:45 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Lunch
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                11:45 PM - 03:30 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                03:30 PM - 04:15 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Snacks
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                04:15 PM - 08:15 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                08:15 PM - 09:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Dinner
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                9:00 PM onwards
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Hackathon resumes
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-3xl mx-auto text-center mt-10">
+                    <h2 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">
+                        Day 3 Schedule (Dec 6th)
+                    </h2>
+                </div>
+
+                <div class="flow-root max-w-3xl mx-auto mt-8 sm:mt-12 lg:mt-16">
+                    <div class="-my-4 divide-y divide-gray-200 dark:divide-gray-700">
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                07:00 AM - 07:30 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Upload final project on GitHub
+
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                07:30 AM - 08:30 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Breakfast
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                08:30 AM - 09:00 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Presentation preparation
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                9:00 AM - 11:30 AM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Presentation (5 min per team)
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                11:30 AM - 12:30 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Lunch
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                12:30 PM - 02:30 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Presentation (5 min per team)
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                02:30 PM - 03:00 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Snacks
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                03:00 PM - 04:30 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Winner announcement, prize distribution
+                                and photo session
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                04:30 PM
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Official End of Hackathon
+                            </h3>
+                        </div>
+
+                        <div class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center">
+                            <p class="w-44 text-lg font-normal text-gray-500 sm:text-right dark:text-gray-400 shrink-0">
+                                17:00 - 14:00
+                            </p>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                Drinks & networking
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
