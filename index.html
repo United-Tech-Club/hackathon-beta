@@ -9,9 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for a cool cinematic effect */
-        html{
+        html {
             scroll-behavior: smooth;
         }
+
         .nav-item {
             transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
         }
@@ -36,37 +37,42 @@
         .bg-cinematic {
             background: linear-gradient(90deg, #21409a, #e7242d);
         }
+
         .main-logo {
             background: white;
             border-radius: 2px;
         }
+
         /* Add this css to your website */
         /* ################# */
 
         .snowflake {
-        position: fixed;
-        top: -10px;
-        z-index: 9999;
-        pointer-events: none;
-        opacity: 0.8;
-        color: white;
+            position: fixed;
+            top: -10px;
+            z-index: 9999;
+            pointer-events: none;
+            opacity: 0.8;
+            color: white;
         }
 
         /* ################# */
 
-        .goback,.fa {
-        color:white;
-        text-align: center;
-        margin: 50px auto;
-        transition: transform 0.3s;
+        .goback,
+        .fa {
+            color: white;
+            text-align: center;
+            margin: 50px auto;
+            transition: transform 0.3s;
 
         }
-        .goback:hover{
-        color:yellow;
-        transform: scale(1.1);
+
+        .goback:hover {
+            color: yellow;
+            transform: scale(1.1);
         }
+
         @media screen and (max-width: 1000px) {
-            .hide-on-small{
+            .hide-on-small {
                 display: none;
             }
         }
@@ -126,7 +132,8 @@
     </div>
 
     <div class="container mx-auto py-20 text-center" id="home">
-        <h1 class="text-5xl font-extrabold text-white mt-14">Welcome to U-TEC <span class="text-blue-400">Hackathon</span> Beta <span class="text-red-300">(β)</span></h1>
+        <h1 class="text-5xl font-extrabold text-white mt-14">Welcome to U-TEC <span
+                class="text-blue-400">Hackathon</span> Beta <span class="text-red-300">(β)</span></h1>
         <p class="mt-4 text-gray-300 text-2xl mb-0">Think, Code, Innovate.</p>
     </div>
 
@@ -168,29 +175,33 @@
     <div class="2xl:mx-auto dark:bg-gray-900 2xl:container md:px-20 px-4 md:py-12 py-9">
         <div class="relative rounded-md flex items-center justify-between  border-2 border-dashed">
             <!-- Text Section -->
-            <div class="text-xl relative z-20 bg-gradient-to-r from-blue-800 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md md:w-9/12">
+            <div
+                class="text-xl relative z-20 bg-gradient-to-r from-blue-800 to-transparent w-full h-full z-40 top-0 md:p-16 p-6 flex flex-col justify-between rounded-md md:w-9/12">
                 <div>
                     <h1 class="md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64">
                         What is U-TEC Hackathon Beta?
                     </h1>
                     <p class="text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4">
-                        U-TEC Hackathon Beta is a national-level event that unites diverse talents to collaboratively create innovative technological solutions for real-world problems, fostering competition and empowering future tech leaders.
+                        U-TEC Hackathon Beta is a national-level event that unites diverse talents to collaboratively
+                        create innovative technological solutions for real-world problems, fostering competition and
+                        empowering future tech leaders.
                     </p>
                 </div>
                 <div class="md:mt-12 mt-20" id="coc">
-                    <button class="text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                    <button
+                        class="text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-full rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-white">
                         Learn More
                     </button>
                 </div>
             </div>
-    
+
             <!-- Image Section (Smaller Image) -->
             <div class="md:w-3/12 w-full hide-on-small">
                 <img src="assets/sword.svg" class="w-full h-auto rounded-md object-contain" alt="Hackathon Image">
             </div>
         </div>
     </div>
-    
+
     <!-- about section ends -->
 
     <!-- code of conduct starts -->
@@ -391,56 +402,216 @@
 
     <!-- sponsor starts -->
 
-    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4"   id="sponsors">
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
         <div class="w-full flex flex-col justify-center items-center">
             <div class="flex flex-col justify-center items-center text-center space-y-4">
                 <h1
                     class="text-3xl lg:text-4xl dark:text-white font-semibold leading-9 md:leading-7 lg:leading-9 text-white">
-                    Our Trusted Partners</h1>
+                    Our Trusted Community Partners</h1>
                 <p class="text-base leading-6 dark:text-gray-400 text-center text-blue-200 w-full md:w-10/12">Here are
-                    sponsors listed for U-TEC Hackathon Beta<span class="text-red-300"> (β)</span></p>
+                    community partners listed for U-TEC Hackathon Beta<span class="text-red-300"> (β)</span></p>
             </div>
 
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 justify-items-around gap-x-6 gap-y-6 xl:gap-x-8 mt-10">
                 <div
                     class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
+                    <img class="dark:hidden  border-2 rounded" src="assets/Aces.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/Aces.png" />
 
                 </div>
                 <div
                     class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                </div>
-                <div
-                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
+                    <img class="dark:hidden  border-2 rounded" src="assets/github education.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/github education.png" />
 
                 </div>
                 <div
                     class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
+                    <img class="dark:hidden  border-2 rounded" src="assets/offsec nepal.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/offsec nepal.jpg" />
 
                 </div>
                 <div
                     class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-
+                    <img class="dark:hidden  border-2 rounded" src="assets/bose.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/bose.jpg" />
                 </div>
                 <div
                     class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
-                    <img class="dark:hidden  border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
-                    <img class="hidden dark:block border-2 rounded" src="assets/coming-soon.svg" alt="marie clarie" />
+                    <img class="dark:hidden  border-2 rounded" src="assets/cfc logo.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/cfc logo.jpg" />
+
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- community partner ends -->
+
+    <!-- partner starts -->
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center space-y-4">
+                <h1
+                    class="text-3xl lg:text-4xl dark:text-white font-semibold leading-9 md:leading-7 lg:leading-9 text-white">
+                    Our Trusted Partners</h1>
+                <p class="text-base leading-6 dark:text-gray-400 text-center text-blue-200 w-full md:w-10/12">Here are
+                    partners listed for U-TEC Hackathon Beta<span class="text-red-300"> (β)</span></p>
+            </div>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 justify-items-around gap-x-6 gap-y-6 xl:gap-x-8 mt-10">
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/skill_partner.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/skill_partner.jpg" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/medical_partner.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/medical_partner.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/chitwan.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/chitwan.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- partner ends -->
+
+    <!-- sponsor starts -->
+
+    <!-- gold -->
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center space-y-4">
+                <h2
+                    class="text-3xl lg:text-4xl dark:text-white font-semibold leading-9 md:leading-7 lg:leading-9 text-white">
+                    <span class="text-yellow-500">Gold Sponsors</span>
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 justify-items-center gap-x-6 gap-y-6 xl:gap-x-8 mt-10">
+                <div
+                    class="w-4/5 focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6 ml-90">
+                    <img class="dark:hidden  border-2 rounded" src="assets/salico.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/salico.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- silver -->
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center space-y-4">
+                <h1
+                    class="text-3xl lg:text-4xl dark:text-white font-semibold leading-9 md:leading-7 lg:leading-9 text-white">
+                    <span class="text-gray-300">Silver Sponsors</span>
+                </h1>
+            </div>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 justify-items-around gap-x-6 gap-y-6 xl:gap-x-8 mt-10">
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/dpaisa.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/dpaisa.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/central.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/central.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/siraichuli.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/siraichuli.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/computer_solution.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/computer_solution.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/BTS.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/BTS.jpg" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/KCT.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/KCT.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bronze -->
+    <div class="2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4" id="sponsors">
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="flex flex-col justify-center items-center text-center space-y-4">
+                <h1
+                    class="text-3xl lg:text-4xl dark:text-white font-semibold leading-9 md:leading-7 lg:leading-9 text-white">
+                    <span class="text-amber-800">Bronze Sponsors</span>
+                </h1>
+            </div>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3 justify-items-around gap-x-6 gap-y-6 xl:gap-x-8 mt-10">
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/retro kit nepal .jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/retro kit nepal .jpg" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/alternate.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/alternate.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/uni.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/uni.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/super.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/super.png" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/BTS.jpg" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/BTS.jpg" />
+
+                </div>
+                <div
+                    class="w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col text-center py-6 px-6 space-y-6">
+                    <img class="dark:hidden  border-2 rounded" src="assets/aomes.png" />
+                    <img class="hidden dark:block border-2 rounded" src="assets/aomes.png" />
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- sponsor ends -->
     <!-- footer -->
     <footer class="dark:bg-gray-900">
@@ -449,7 +620,8 @@
                 <div class="mb-6 md:mb-0  text-white">
                     <a href="https://www.unitedtechclub.com" class="flex items-center">
                         <img src="assets/club_logo.png" class="h-14 me-3" alt="FlowBite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white  text-white">United
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white  text-white">United
                             Tech Club</span>
                     </a>
                 </div>
@@ -503,8 +675,7 @@
                 </span>
 
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="facebook.com/unitedtechclub1"
-                        class="text-gray-500 hover:text-white dark:hover:text-white">
+                    <a href="facebook.com/unitedtechclub1" class="text-gray-500 hover:text-white dark:hover:text-white">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 8 19">
                             <path fill-rule="evenodd"
